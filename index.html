@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Buleleng - Jelajahi Sejarah dan Warisan Budaya Buleleng</title>
+  <meta name="description" content="Website digitalisasi resmi Museum Buleleng, Bali: Media edukasi sejarah, galeri foto arsip asli, denah peta interaktif, dan kuis budaya untuk pelajar, mahasiswa, dan wisatawan.">
+
+  <!-- Tipografi Tegas & Rapi: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGASI ==================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#beranda" class="brand-logo" aria-label="Beranda Museum Buleleng">
+        <div class="logo-emblem">
+          <span class="emblem-char">✦</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">MUSEUM BULELENG</span>
+          <span class="brand-subtitle">Singaraja, Bali Utara</span>
+        </div>
+      </a>
+
+      <!-- Navigasi Desktop -->
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Museum</a></li>
+          <li><a href="#video-rekap" class="nav-link">Tour Museum</a></li>
+          <li><a href="#koleksi" class="nav-link">Koleksi</a></li>
+          <li><a href="#peta" class="nav-link">Peta Interaktif</a></li>
+          <li><a href="#kuis" class="nav-link">Kuis Sejarah</a></li>
+          <li><a href="#kunjungan" class="nav-link">Kunjungan</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#koleksi" class="btn btn-primary btn-sm">Jelajahi Koleksi</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Buka Menu Navigasi">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Drawer Seluler -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#beranda" class="mobile-link">Beranda</a></li>
+        <li><a href="#tentang" class="mobile-link">Tentang Museum</a></li>
+        <li><a href="#video-rekap" class="mobile-link">Tour Museum Buleleng</a></li>
+        <li><a href="#koleksi" class="mobile-link">Koleksi Museum</a></li>
+        <li><a href="#peta" class="mobile-link">Peta Interaktif</a></li>
+        <li><a href="#kuis" class="mobile-link">Kuis Sejarah</a></li>
+        <li><a href="#kunjungan" class="mobile-link">Panduan Kunjungan</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="beranda">
+    <div class="hero-bg-wrapper">
+      <img src="asset/halaman_depan_museum.jpg" alt="Kompleks Museum Buleleng" class="hero-bg-image">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-accent"></span> ARSIP RESMI FOTO & SEJARAH BALI UTARA
+      </div>
+      <h1 class="hero-title">Jelajahi Sejarah dan Warisan Budaya Buleleng</h1>
+      <p class="hero-desc">
+        Media digitalisasi terpadu untuk mempelajari benda peninggalan prasejarah, heroisme Ki Barak Panji Sakti, heroisme Perang Jagaraga, hingga keanggunan seni tradisi Singaraja.
+      </p>
+      <div class="hero-actions">
+        <a href="#koleksi" class="btn btn-primary">
+          <span>Jelajahi Koleksi</span>
+          <span class="btn-arrow">➔</span>
+        </a>
+        <a href="#video-rekap" class="btn btn-gold">
+          <span>▶ Tour Museum Buleleng</span>
+        </a>
+        <a href="#peta" class="btn btn-outline">
+          <span>Mulai Eksplorasi Ruang</span>
+        </a>
+      </div>
+
+      <!-- Quick Info Strip -->
+      <div class="hero-info-strip">
+        <div class="info-cell">
+          <span class="info-label">Lokasi Resmi</span>
+          <span class="info-val">Jl. Veteran No. 23, Singaraja</span>
+        </div>
+        <div class="info-sep"></div>
+        <div class="info-cell">
+          <span class="info-label">Kompleks Budaya</span>
+          <span class="info-val">Kawasan Sasana Budaya</span>
+        </div>
+        <div class="info-sep"></div>
+        <div class="info-cell">
+          <span class="info-label">Koleksi Arsip</span>
+          <span class="info-val">266 Foto Arsip Asli Terverifikasi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TENTANG MUSEUM ==================== -->
+  <section class="section section-about" id="tentang">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="section-kicker">PROFIL & PERAN</span>
+        <h2 class="section-heading">Mengenal Museum Buleleng</h2>
+        <div class="gold-divider">✦ ✦ ✦</div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-col">
+          <h3 class="about-subheading">Pusat Dokumentasi Peradaban Denbukit</h3>
+          <p>
+            Museum Buleleng berlokasi di jantung Kota Singaraja, didirikan untuk melestarikan benda peninggalan masa prasejarah, kejayaan wangsa kerajaan Buleleng, hingga periode perjuangan kemerdekaan di Bali Utara.
+          </p>
+          <p>
+            Berada dalam satu kompleks bersejarah dengan perpustakaan naskah lontar <strong>Gedong Kirtya</strong> dan dekat dengan <strong>Puri Kanginan</strong>, museum ini menyimpan koleksi berharga yang menjadi sumber belajar penting bagi pelajar, mahasiswa, dan peneliti budaya.
+          </p>
+          <div class="note-box">
+            <strong>Komitmen Verifikasi Data:</strong> Seluruh informasi yang disajikan pada website ini merujuk pada 266 foto arsip asli dan dokumen inventaris museum yang terbagi dalam 8 zona pamer: Halaman Depan & Samping, Ruang 1 A, Ruang 1 B, Ruang 2 A, Ruang 2 B, Ruang 3, Ruang 4, dan Ruang Lorong Lukisan.
+          </div>
+        </div>
+
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <div class="pillar-num">01</div>
+            <h4>Edukasi Pelajar & Mahasiswa</h4>
+            <p>Menyajikan sejarah secara terstruktur dengan bahasa yang lugas, mudah dipahami, dan berbasis bukti foto peninggalan nyata.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">02</div>
+            <h4>Eksplorasi Ruang & Koleksi</h4>
+            <p>Memberikan gambaran komprehensif bagi calon pengunjung mengenai alur ruang pamer dan zonasi artefak.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-num">03</div>
+            <h4>Evaluasi Pembelajaran</h4>
+            <p>Menguji daya serap materi sejarah lokal melalui modul kuis interaktif yang objektif dan menyenangkan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VIDEO TOUR SECTION ==================== -->
+  <section class="section section-video" id="video-rekap">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="section-kicker">DOKUMENTASI AUDIOVISUAL</span>
+        <h2 class="section-heading">Tour Museum Buleleng</h2>
+        <div class="gold-divider">✦ ✦ ✦</div>
+        <p class="section-subtext">
+          Saksikan rangkuman visual keindahan ruang pamer, suasana asri kompleks cagar budaya Sasana Budaya, dan keagungan peninggalan bersejarah Bali Utara dalam dokumentasi video resmi berdurasi 1 menit 36 detik.
+        </p>
+      </div>
+
+      <div class="video-showcase-card">
+        <div class="video-player-wrapper">
+          <video 
+            controls 
+            playsinline 
+            preload="metadata" 
+            poster="asset/tour_video_poster.jpg" 
+            class="museum-video-player"
+            id="museumVideoPlayer"
+            aria-label="Tour Museum Buleleng">
+            <source src="asset/tour_museum_buleleng.mp4" type="video/mp4">
+            <source src="asset/video_recap_museum_buleleng.mov" type="video/quicktime">
+            <source src="asset/video%20recap%20Museum%20Buleleng.MOV" type="video/quicktime">
+            <p>Peramban Anda belum mendukung pemutaran video langsung. Silakan gunakan tombol unduh di bawah untuk menonton video.</p>
+          </video>
+          <div class="video-badge-overlay">
+            <span class="v-badge-dot"></span> TOUR RESMI MUSEUM BULELENG • 01:36
+          </div>
+        </div>
+
+        <div class="video-meta-box">
+          <div class="video-meta-info">
+            <h3 class="video-meta-title">Tur Sinematik & Rangkuman Koleksi Budaya</h3>
+            <p class="video-meta-desc">
+              Dokumentasi ini merangkum perjalanan visual melintasi 8 zona utama Museum Buleleng: mulai dari gerbang Candi Bentar di halaman depan, deretan sarkofagus megalitikum di halaman samping, galeri lukisan mitologi dan peninggalan kemerdekaan di ruang pamer, hingga lorong lukisan klasik.
+            </p>
+          </div>
+
+          <div class="video-highlights-grid">
+            <div class="v-highlight-item">
+              <span class="v-icon">🏛️</span>
+              <div class="v-highlight-text">
+                <strong>Kompleks Sasana Budaya</strong>
+                <p>Arsitektur tradisional khas Bali Utara dan area cagar budaya terbuka.</p>
+              </div>
+            </div>
+            <div class="v-highlight-item">
+              <span class="v-icon">📜</span>
+              <div class="v-highlight-text">
+                <strong>Evolusi Peradaban Denbukit</strong>
+                <p>Merekam jejak prasejarah, era kerajaan Panji Sakti, hingga zaman pergerakan.</p>
+              </div>
+            </div>
+            <div class="v-highlight-item">
+              <span class="v-icon">🏺</span>
+              <div class="v-highlight-text">
+                <strong>Koleksi Terverifikasi</strong>
+                <p>Visualisasi artefak asli, alat adat, radio antik, dan senjata pusaka.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-action-footer">
+            <div class="video-action-left">
+              <a href="asset/tour_museum_buleleng.mp4" download="Tour_Museum_Buleleng.mp4" class="btn btn-outline btn-sm">
+                <span>⬇ Unduh Video Tour (20.6 MB MP4)</span>
+              </a>
+              <button class="btn btn-primary btn-sm" id="btnPlayVideoDirect">
+                <span>▶ Mulai Tour Video Sekarang</span>
+              </button>
+            </div>
+            <span class="v-note">Format: MP4 Universal HD (H.264) • Durasi: 01:36 • Audio Stereo AAC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN KOLEKSI MUSEUM ==================== -->
+  <section class="section section-koleksi" id="koleksi">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-kicker">KATALOG DIGITAL</span>
+        <h2 class="section-heading">Koleksi Arsip Pilihan Museum Buleleng</h2>
+        <p class="section-subtext">
+          Menampilkan benda peninggalan sejarah dan budaya asli Museum Buleleng yang disesuaikan berdasarkan zonasi ruangan pamer.
+        </p>
+        <div class="status-alert">
+          ℹ️ <strong>Status Kuratorial:</strong> Seluruh 266 koleksi berasal dari foto arsip resmi Museum Buleleng yang mencakup Halaman Depan & Samping (8), Ruang 1 A (38), Ruang 1 B (38), Ruang 2 A (44), Ruang 2 B (55), Ruang 3 (26), Ruang 4 (42), dan Ruang Lorong Lukisan (15).
+        </div>
+      </div>
+
+      <!-- Alat Kontrol: Filter Ruangan & Pencarian -->
+      <div class="collection-toolbar">
+        <div class="filter-group" id="categoryFilters" role="tablist" aria-label="Filter Ruangan Koleksi">
+          <button class="filter-btn active" data-filter="all">Semua Koleksi (266)</button>
+          <button class="filter-btn" data-filter="halaman">Halaman Depan & Samping (8)</button>
+          <button class="filter-btn" data-filter="ruang-1a">Ruang 1 A (38)</button>
+          <button class="filter-btn" data-filter="ruang-1b">Ruang 1 B (38)</button>
+          <button class="filter-btn" data-filter="ruang-2a">Ruang 2 A (44)</button>
+          <button class="filter-btn" data-filter="ruang-2b">Ruang 2 B (55)</button>
+          <button class="filter-btn" data-filter="ruang-3">Ruang 3 (26)</button>
+          <button class="filter-btn" data-filter="ruang-4">Ruang 4 (42)</button>
+          <button class="filter-btn" data-filter="lorong">Ruang Lorong Lukisan (15)</button>
+        </div>
+        <div class="search-wrap">
+          <input type="text" id="collectionSearch" placeholder="Cari nama koleksi, era, atau ruangan..." aria-label="Cari koleksi">
+        </div>
+      </div>
+
+      <!-- Banner Informasi Ruangan Aktif -->
+      <div class="room-active-banner" id="roomActiveBanner" style="display: none;">
+        <div class="room-banner-left">
+          <span class="room-banner-badge" id="roomBannerBadge">RUANG 1 A</span>
+          <h3 class="room-banner-title" id="roomBannerTitle">Nama Ruangan</h3>
+          <p class="room-banner-desc" id="roomBannerDesc">Deskripsi ruang pamer...</p>
+        </div>
+        <div class="room-banner-right">
+          <div class="room-banner-count" id="roomBannerCount">0 Foto Asli</div>
+          <button class="btn btn-outline btn-sm" id="btnResetRoomFilter">⟲ Lihat Semua Ruangan</button>
+        </div>
+      </div>
+
+      <!-- Bar Indikator Jumlah Koleksi -->
+      <div class="collection-meta-bar">
+        <span id="collectionCountInfo">Menampilkan koleksi arsip asli</span>
+        <span id="collectionGuideTip">Klik pada foto mana pun untuk memperbesar tampilan & melihat detail kuratorial</span>
+      </div>
+
+      <!-- Grid Kartu Koleksi -->
+      <div class="collection-grid" id="collectionGrid">
+        <!-- Kartu koleksi dirender dinamis melalui app.js -->
+      </div>
+
+      <!-- Tombol Muat Lebih Banyak & Tampilkan Semua -->
+      <div class="load-more-wrapper" id="loadMoreWrapper">
+        <button class="btn btn-primary btn-load-more" id="loadMoreBtn">
+          Muat Koleksi Berikutnya (+36 Foto)
+        </button>
+        <button class="btn btn-outline btn-load-more" id="showAllBtn">
+          Tampilkan Seluruh 266 Koleksi Sekaligus
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PETA INTERAKTIF MUSEUM ==================== -->
+  <section class="section section-peta" id="peta">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="section-kicker">EKSPLORASI RUANG</span>
+        <h2 class="section-heading">Peta Interaktif Ruangan Museum Buleleng</h2>
+        <p class="section-subtext">
+          Pilih salah satu ruangan pada denah arsitektur berikut untuk melihat informasi ruang pamer dan koleksi arsip terkait.
+        </p>
+        <div class="status-alert map-status-alert">
+          📍 <em>Denah Penataan Ruang Pamer Sesuai Arsip Fisik Resmi Museum Buleleng</em>
+        </div>
+      </div>
+
+      <div class="map-wrapper-grid">
+        <!-- Sisi Denah SVG Interaktif -->
+        <div class="map-card-surface">
+          <div class="map-header-bar">
+            <span class="map-title-badge">Denah Ruang Pamer Resmi</span>
+            <button class="btn btn-text btn-sm" id="btnResetMap">⟲ Tampilkan Halaman</button>
+          </div>
+
+          <div class="svg-container">
+            <svg viewBox="0 0 700 450" class="floor-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Denah Ruang Pamer Museum Buleleng">
+              <rect x="15" y="15" width="670" height="420" rx="8" class="svg-ground" />
+
+              <!-- Baris Atas: Ruang 2 A, Ruang 2 B, Ruang 3 -->
+              <!-- Ruang 2 A: Peralatan & Pahlawan -->
+              <g class="svg-room" data-room-id="ruang-2a" tabindex="0" role="button">
+                <rect x="40" y="40" width="180" height="110" rx="6" class="room-rect room-2a" />
+                <text x="130" y="85" class="room-title">RUANG 2 A</text>
+                <text x="130" y="108" class="room-subtitle">Peralatan & Pahlawan</text>
+                <text x="130" y="128" class="room-tag">[Terverifikasi]</text>
+              </g>
+
+              <!-- Ruang 2 B: Ekskavasi Arkeologi -->
+              <g class="svg-room" data-room-id="ruang-2b" tabindex="0" role="button">
+                <rect x="240" y="40" width="220" height="110" rx="6" class="room-rect room-2b" />
+                <text x="350" y="85" class="room-title">RUANG 2 B</text>
+                <text x="350" y="108" class="room-subtitle">Ekskavasi Arkeologi Kuno</text>
+                <text x="350" y="128" class="room-tag">[Terverifikasi]</text>
+              </g>
+
+              <!-- Ruang 3: Kolonial & Regalia Puri -->
+              <g class="svg-room" data-room-id="ruang-3" tabindex="0" role="button">
+                <rect x="480" y="40" width="180" height="110" rx="6" class="room-rect room-3" />
+                <text x="570" y="85" class="room-title">RUANG 3</text>
+                <text x="570" y="108" class="room-subtitle">Masa Kolonial & Puri</text>
+                <text x="570" y="128" class="room-tag">[Terverifikasi]</text>
+              </g>
+
+              <!-- Ruang Lorong Lukisan: Koridor Pameran Seni Lukis Klasik -->
+              <g class="svg-room" data-room-id="lorong" tabindex="0" role="button">
+                <rect x="40" y="153" width="620" height="32" rx="4" class="room-rect room-lorong" />
+                <text x="350" y="173" class="room-title" style="font-size: 11px; fill: #800020;">✦ RUANG LORONG LUKISAN (15 Galeri Lukisan) ✦</text>
+              </g>
+
+              <!-- Baris Tengah: Ruang 1 A, Ruang 1 B, Ruang 4 -->
+              <!-- Ruang 1 A: Sejarah & Lukisan -->
+              <g class="svg-room is-active" data-room-id="ruang-1a" tabindex="0" role="button">
+                <rect x="40" y="190" width="180" height="110" rx="6" class="room-rect room-1a" />
+                <text x="130" y="235" class="room-title">RUANG 1 A</text>
+                <text x="130" y="258" class="room-subtitle">Sejarah & Mitologi</text>
+                <text x="130" y="278" class="room-tag">[Terverifikasi]</text>
+              </g>
+
+              <!-- Ruang 1 B: Modernisasi & Wayang -->
+              <g class="svg-room" data-room-id="ruang-1b" tabindex="0" role="button">
+                <rect x="240" y="190" width="220" height="110" rx="6" class="room-rect room-1b" />
+                <text x="350" y="235" class="room-title">RUANG 1 B</text>
+                <text x="350" y="258" class="room-subtitle">Modernisasi & Wayang</text>
+                <text x="350" y="278" class="room-tag">[Terverifikasi]</text>
+              </g>
+
+              <!-- Ruang 4: Silsilah & Seni Pahat -->
+              <g class="svg-room" data-room-id="ruang-4" tabindex="0" role="button">
+                <rect x="480" y="190" width="180" height="110" rx="6" class="room-rect room-4" />
+                <text x="570" y="235" class="room-title">RUANG 4</text>
+                <text x="570" y="258" class="room-subtitle">Silsilah & Seni Pahat</text>
+                <text x="570" y="278" class="room-tag">[Terverifikasi]</text>
+              </g>
+
+              <!-- Baris Bawah: Halaman Depan & Halaman Samping -->
+              <g class="svg-room" data-room-id="halaman" tabindex="0" role="button">
+                <rect x="40" y="325" width="620" height="90" rx="6" class="room-rect room-halaman" />
+                <text x="350" y="360" class="room-title">HALAMAN DEPAN & HALAMAN SAMPING</text>
+                <text x="350" y="380" class="room-subtitle">Candi Bentar, Gedung Pengelola & Taman Arkeologi Sarkofagus</text>
+                <text x="350" y="398" class="room-tag">[Area Cagar Budaya Terbuka]</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="map-legend-row">
+            <span class="legend-item"><span class="legend-box verified"></span> Area Terverifikasi Sesuai Arsip Fisik</span>
+          </div>
+        </div>
+
+        <!-- Sisi Panel Informasi Ruangan -->
+        <div class="map-detail-panel" id="mapDetailPanel">
+          <div class="panel-header">
+            <span class="room-badge" id="panelRoomBadge">RUANG 1 A</span>
+            <span class="verification-badge" id="panelVerifyBadge">Status: Terverifikasi Arsip Asli</span>
+          </div>
+          <h3 class="panel-room-title" id="panelRoomTitle">Ruang Sejarah Pendirian & Lukisan Mitologi</h3>
+          <p class="panel-room-desc" id="panelRoomDesc">
+            Ruang pamer awal yang menyajikan prasasti dan panel sejarah berdirinya Museum Buleleng serta mahakarya lukisan Dewa Brahma, Saraswati, Wisnu, Siwa, dan wayang kulit purwa.
+          </p>
+
+          <div class="panel-section">
+            <h4 class="panel-section-title">Koleksi Terkait di Ruangan Ini:</h4>
+            <ul class="panel-collection-list" id="panelCollectionList">
+              <li>Panel Sejarah Berdirinya Museum Buleleng (30 Maret 2002)</li>
+              <li>Lukisan Dewa Brahma & Dewi Saraswati</li>
+              <li>Lukisan Dewa Wisnu Pemelihara Alam Semesta</li>
+              <li>Lukisan Siwa Mahadewa & Patung Penjaga</li>
+              <li>Wayang Kulit Tokoh Kesatria Bima dan Gatotkaca</li>
+            </ul>
+          </div>
+
+          <div class="panel-actions">
+            <button class="btn btn-primary btn-sm" id="btnViewRoomCollection">Lihat Koleksi Ruang Ini ➔</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN KUIS SEJARAH ==================== -->
+  <section class="section section-kuis" id="kuis">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="section-kicker">EVALUASI PEMBELAJARAN</span>
+        <h2 class="section-heading">Kuis Interaktif Sejarah Buleleng</h2>
+        <p class="section-subtext">
+          Uji pemahaman Anda mengenai sejarah dan warisan budaya Buleleng berdasarkan koleksi yang ada di museum.
+        </p>
+      </div>
+
+      <div class="quiz-card" id="quizCard">
+        <!-- Status Sebelum Mulai -->
+        <div class="quiz-start-view" id="quizStartView">
+          <div class="start-icon">📖</div>
+          <h3 class="start-title">Siap Menguji Wawasan Sejarah Anda?</h3>
+          <p class="start-desc">
+            Kuis ini terdiri dari 5 pertanyaan pilihan ganda yang dirangkum langsung dari narasi sejarah dan artefak asli Museum Buleleng. Skor akhir dan pembahasan lengkap akan ditampilkan setelah seluruh pertanyaan dijawab.
+          </p>
+          <div class="quiz-terms">
+            <span>✓ 5 Pertanyaan Terstruktur</span>
+            <span>✓ Pembahasan Setiap Jawaban</span>
+            <span>✓ Evaluasi Pemahaman</span>
+          </div>
+          <button class="btn btn-primary" id="btnStartQuiz">Mulai Kuis Sekarang ➔</button>
+        </div>
+
+        <!-- Tampilan Pertanyaan Berjalan -->
+        <div class="quiz-play-view" id="quizPlayView" style="display: none;">
+          <div class="quiz-top-bar">
+            <div class="question-counter">
+              Pertanyaan <span id="qCurrent">1</span> dari <span id="qTotal">5</span>
+            </div>
+            <div class="quiz-category-tag" id="qCategoryTag">Era Sejarah</div>
+          </div>
+          <div class="quiz-progress-track">
+            <div class="quiz-progress-bar" id="quizProgressBar"></div>
+          </div>
+
+          <h3 class="question-text" id="questionText">Memuat pertanyaan...</h3>
+
+          <div class="options-grid" id="optionsGrid">
+            <!-- Pilihan jawaban di-render dinamis oleh app.js -->
+          </div>
+
+          <div class="quiz-controls-row">
+            <button class="btn btn-primary btn-sm" id="btnNextQuestion" style="display: none;">
+              Pertanyaan Berikutnya ➔
+            </button>
+          </div>
+        </div>
+
+        <!-- Tampilan Hasil Kuis & Pembahasan -->
+        <div class="quiz-result-view" id="quizResultView" style="display: none;">
+          <div class="result-icon" id="resultIcon">🏆</div>
+          <h3 class="result-heading">Kuis Selesai!</h3>
+          <p class="result-note">Berikut hasil pencapaian pemahaman sejarah Buleleng Anda:</p>
+          
+          <div class="score-display-box">
+            <span class="score-number" id="finalScoreVal">0</span>
+            <span class="score-max">/ 100</span>
+          </div>
+
+          <div class="result-evaluation" id="resultEvalText">Evaluasi Pembelajaran</div>
+
+          <!-- Bagian Pembahasan Jawaban -->
+          <div class="review-section">
+            <h4 class="review-title">Pembahasan & Catatan Historis:</h4>
+            <div class="review-list" id="reviewList">
+              <!-- Pembahasan di-render dinamis oleh app.js -->
+            </div>
+          </div>
+
+          <div class="result-actions-row">
+            <button class="btn btn-primary" id="btnRestartQuiz">Ulangi Kuis</button>
+            <a href="#koleksi" class="btn btn-outline">Kaji Ulang Koleksi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PANDUAN KUNJUNGAN ==================== -->
+  <section class="section section-visit" id="kunjungan">
+    <div class="container">
+      <div class="section-intro text-center">
+        <span class="section-kicker">INFORMASI PRAKTIS</span>
+        <h2 class="section-heading">Rencana Kunjungan Fisik</h2>
+        <div class="gold-divider">✦ ✦ ✦</div>
+      </div>
+
+      <div class="visit-cards-grid">
+        <div class="visit-box">
+          <div class="box-icon">🏛️</div>
+          <h3>Alamat Museum</h3>
+          <p>
+            <strong>Museum Buleleng</strong><br>
+            Kompleks Sasana Budaya, Jalan Veteran No. 23, Singaraja, Bali 81118.
+          </p>
+          <span class="box-meta">Bersebelahan dengan Perpustakaan Lontar Gedong Kirtya.</span>
+        </div>
+
+        <div class="visit-box">
+          <div class="box-icon">⏰</div>
+          <h3>Waktu Operasional</h3>
+          <p>
+            <strong>Senin – Kamis:</strong> 08.00 – 15.30 WITA<br>
+            <strong>Jumat:</strong> 08.00 – 13.00 WITA<br>
+            <strong>Sabtu:</strong> 08.00 – 14.00 WITA<br>
+            <strong>Minggu & Hari Libur:</strong> Tutup
+          </p>
+          <span class="box-meta">Disarankan hadir 1 jam sebelum jam tutup.</span>
+        </div>
+
+        <div class="visit-box">
+          <div class="box-icon">📋</div>
+          <h3>Etika Berkunjung</h3>
+          <p>
+            • Mengenakan pakaian sopan dan tertib.<br>
+            • Tidak memegang benda koleksi tanpa pendampingan kurator.<br>
+            • Mengambil foto dokumentasi diperbolehkan tanpa lampu kilat (*flash*).
+          </p>
+          <span class="box-meta">Panduan kurator dapat diminta di meja registrasi.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content-grid">
+      <div class="footer-col-main">
+        <div class="brand-logo footer-brand">
+          <div class="logo-emblem">✦</div>
+          <span class="brand-title">MUSEUM BULELENG</span>
+        </div>
+        <p class="footer-summary">
+          Inisiatif digitalisasi warisan sejarah dan budaya Museum Buleleng, Bali. Dikembangkan untuk menjembatani naskah dan artefak sejarah lokal dengan generasi masa kini.
+        </p>
+        <p class="footer-audit-note">
+          <em>Proyek Edukasi Digital • Menjunjung tinggi keaslian data dan etika sejarah lokal.</em>
+        </p>
+      </div>
+
+      <div class="footer-col-nav">
+        <h4>Navigasi Situs</h4>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Museum</a></li>
+          <li><a href="#video-rekap">Tour Museum Buleleng</a></li>
+          <li><a href="#koleksi">Katalog Koleksi</a></li>
+          <li><a href="#peta">Peta Interaktif</a></li>
+          <li><a href="#kuis">Kuis Pembelajaran</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-contact">
+        <h4>Kontak Informasi</h4>
+        <p>Jl. Veteran No. 23, Paket Agung, Singaraja, Kabupaten Buleleng, Bali 81118</p>
+        <p>Wilayah Administratif: Dinas Kebudayaan Kabupaten Buleleng</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom-line">
+      <div class="container bottom-flex">
+        <p>© 2026 Museum Buleleng Digital. Seluruh hak cipta peninggalan dilindungi undang-undang cagar budaya.</p>
+        <a href="#beranda" class="to-top-btn">Kembali ke Atas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL DETAIL & PEMBESAR FOTO KOLEKSI ==================== -->
+  <div class="modal-overlay" id="detailModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-btn-close" id="modalClose" aria-label="Tutup jendela detail">&times;</button>
+      <button class="modal-nav-arrow modal-prev" id="modalPrevBtn" aria-label="Foto Sebelumnya" title="Foto Sebelumnya (Panah Kiri)">❮</button>
+      <button class="modal-nav-arrow modal-next" id="modalNextBtn" aria-label="Foto Selanjutnya" title="Foto Selanjutnya (Panah Kanan)">❯</button>
+      
+      <div class="modal-grid">
+        <div class="modal-img-col">
+          <div class="modal-counter-pill" id="modalCounter">Foto 1 dari 266</div>
+          <div class="modal-image-holder" id="modalImgHolder" title="Klik foto untuk melihat dalam resolusi penuh">
+            <img id="modalImg" src="" alt="Foto Koleksi Museum Buleleng" class="modal-artifact-img">
+            <div class="modal-img-zoom-tip">🔍 Klik foto untuk resolusi asli</div>
+          </div>
+          <div class="modal-verification-tag" id="modalVerifyTag">
+            Koleksi Terverifikasi — Arsip Fisik Museum Buleleng
+          </div>
+          <div class="modal-img-actions">
+            <a id="modalFullImgLink" href="" target="_blank" class="btn btn-outline btn-sm modal-full-btn">
+              <span>Buka Foto Resolusi Asli ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="modal-info-col">
+          <span class="modal-category-label" id="modalCategory">KATEGORI</span>
+          <h3 class="modal-item-title" id="modalTitle">Nama Koleksi</h3>
+
+          <div class="modal-meta-grid">
+            <div class="meta-item">
+              <span class="meta-k">No. Registrasi:</span>
+              <span class="meta-v" id="modalReg">Dalam Verifikasi Dokumen</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-k">Perkiraan Era:</span>
+              <span class="meta-v" id="modalEra">Perlu Verifikasi Kurator</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-k">Material / Bahan:</span>
+              <span class="meta-v" id="modalMaterial">Sesuai Fisik Koleksi</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-k">Lokasi Ruang:</span>
+              <span class="meta-v" id="modalRoom">Museum Buleleng</span>
+            </div>
+          </div>
+
+          <div class="modal-narrative">
+            <h4>Deskripsi & Konteks Sejarah:</h4>
+            <p id="modalDesc">Memuat narasi sejarah berdasarkan dokumen asli museum...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS Interaktif & Data Koleksi Lengkap 266 Arsip Asli -->
+  <script src="collections_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
